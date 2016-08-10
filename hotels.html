@@ -20,6 +20,55 @@
   	</header>
     <main class="main-content">
       <div class="container">
+        <form class="hotels-booking">
+          <fieldset class="booking-option">
+            <legend class="booking-header">Инфраструктура:</legend>
+            <label class="booking-option">
+              <input type="checkbox" name="pool" checked>
+              <span class="booking-option-text">Бассейн</span>
+            </label>
+            <label class="booking-option">
+              <input type="checkbox" name="parking">
+              <span class="booking-option-text">Парковка</span>
+            </label>
+            <label class="booking-option">
+              <input type="checkbox" name="wifi">
+              <span class="booking-option-text">Wi-fi</span>
+            </label>
+          </fieldset>
+          <fieldset class="booking-option">
+            <legend class="booking-header">Тип жилья:</legend>
+            <label class="booking-option">
+              <input type="checkbox" name="hotel" checked>
+              <span class="booking-option-text">Гостиница</span>
+            </label>
+            <label class="booking-option">
+              <input type="checkbox" name="motel" checked>
+              <span class="booking-option-text">Мотель</span>
+            </label>
+            <label class="booking-option">
+              <input type="checkbox" name="apartment" checked>
+              <span class="booking-option-text">Апартаменты</span>
+            </label>
+          </fieldset>
+          <fieldset class="booking-option">
+            <legend class="booking-header">Стоимость в сутки (Р):</legend>
+            <label class="booking-option">
+              <span class="booking-option-text">От 0</span>
+              <input type="range" name="" min="0" max="3000">
+              <span class="booking-option-text">До 3000</span>
+            </label>
+            <input type="submit" name="booking-apply-button" value="Показать">
+          </fieldset>
+        </form>
+        <section class="searching-results">
+          <div class="results-sorting">
+            
+          </div> 
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
       </div>
     </main>
     <footer class="main-footer">
