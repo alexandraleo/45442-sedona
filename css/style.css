@@ -1,0 +1,34 @@
+body {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	font-weight: normal;
+	font-family: 'PT Sans', sans-serif;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+}
+h2 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+}
+p.text-special {
+	color: #ffffff;
+}
+span.title-special, span.title-reasons {
+	font-weight: bold;
+}
+h2.interested {
+	font-size: 30px;
+	line-height: 24px;
+}
+p.invite {
+	line-height: 24px;
+}
+span.hotel-info {
+	color: #333333;
+}
+span.average-rating {
+	color: #666666;
+}
