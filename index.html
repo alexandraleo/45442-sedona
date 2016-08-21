@@ -7,47 +7,49 @@
   </head>
   <body>
   	<header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
     		<nav class="navigation">
-    			<a href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo"></a>
+        <a href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo"></a>
     			<ul>
     				<li><a href="#">Информация</a></li>
     				<li><a href="#">Фото и видео</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
     				<li><a href="#">Карта штата</a></li>
-    				<li><a href="hotels.html">Гостиницы</a></li>
     			</ul>
     		</nav>
       </div>
   	</header>
   	<main class="main-content">
-      <div class="container">
+      <div class="container clearfix">
     	 <img src="img/background.jpg" width="1200" height="773" alt="Седона">
        <img src="img/mask.png" width="1200" height="57" alt="Mask">
     	 <img src="img/sedona-welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-    	 <h2 class="headline">Седона — небольшой городок в Аризоне,  заслуживающий большего! </h2>
-    	 <p class="lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    	 <section class="reason-special">
-          <p class="text-special"><span class="title-special">Настоящий городок</span><br>-№1-<br>Седона - не аттракцион для туристов, там течет своя жизнь.</p>
-          <img src="img/reason-1.jpg" width="800" height="256" alt="Настоящий городок">
+    	 <div class="lead-block"><h2 class="headline">Седона — небольшой городок в Аризоне,  заслуживающий большего! </h2>
+    	 <p class="lead clearfix">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p></div>
+    	 <section class="reason-special clearfix">
+          <p class="text-special left"><span class="title-special">Настоящий городок</span><br>-№1-<br>Седона - не аттракцион для туристов, там течет своя жизнь.</p>
+          <img class="special-img-right" src="img/reason-1.jpg" width="800" height="256" alt="Настоящий городок">
   	   </section>
-       <section class="reasons habitation">
-          <img src="img/house.png" alt="Жилье" width="75" height="72">
-          <p class="text-reasons"><span class="title-reasons">Жилье</span><br>
-          Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </section>
-        <section class="reasons food">
-          <img src="img/food.png" alt="Еда" width="74" height="70">
-          <p class="text-reasons"><span class="title-reasons">Еда</span><br>
-          Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
-        </section>
-        <section class="reasons souvenirs">
-          <img src="img/souvenirs.png" alt="Сувениры" width="64" height="76">
-          <p class="text-reasons"><span class="title-reasons">Сувениры</span><br>
-          Не только китайского, но и местного производства!</p>
-        </section>
-        <section class="reason-special">
-          <img src="img/reason-2.jpg" width="800" height="256" alt="Мост Дьявола">
-    		  <p class="text-special"><span class="title-special">Там есть мост дьявола</span><br>
+       <div class="clearfix">
+         <section class="reasons habitation">
+            <img src="img/house.png" alt="Жилье" width="75" height="72">
+            <p class="text-reasons"><span class="title-reasons">Жилье</span><br>
+            Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </section>
+          <section class="reasons food">
+            <img src="img/food.png" alt="Еда" width="74" height="70">
+            <p class="text-reasons"><span class="title-reasons">Еда</span><br>
+            Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+          </section>
+          <section class="reasons souvenirs">
+            <img src="img/souvenirs.png" alt="Сувениры" width="64" height="76">
+            <p class="text-reasons"><span class="title-reasons">Сувениры</span><br>
+            Не только китайского, но и местного производства!</p>
+          </section>
+        </div>
+        <section class="reason-special clearfix">
+          <img class="special-img-left" src="img/reason-2.jpg" width="800" height="256" alt="Мост Дьявола">
+    		  <p class="text-special right"><span class="title-special">Там есть мост дьявола</span><br>
           -№2-<br>Да, по нему можно пройти! Если конечно вы осмелитесь.</p>
         </section>
         <section class="reasons territory">
@@ -62,11 +64,12 @@
           <p class="text-reasons"><span class="title-reasons">Мало туристов</span><br>
           -№5-<br>Большинства едет в Гранд Каньон и толпится там</p>
         </section>
-        <section class="invite">
+        <section class="lead-block clearfix">
           <h2 class="interested">Заинтересовались?</h2>
           <p class="text-reasons invite">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="button-search" type="button">Поиск гостиницы в Седоне</button>           
         </section>
-        <button class="button">Поиск гостиницы в Седоне</button>
+
         <form class="hotels-search">
           <label class="search-option">
             <input type="date" name="checkin">
@@ -90,16 +93,16 @@
       </div>
   	</main>
   	<footer class="main-footer">
-      <div class="container">
-    		<section class="footer-hashtag">
+      <div class="container clearfix">
+    		<section class="footer hashtag">
     			<p>#VISITSEDONA</p>
     		</section>
-    		<section class="footer-social">
+    		<section class="footer social">
     			<a class="social-btn social-btn-tw" href="#">Tвиттер</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-yt" href="#">Youtube</a>
     		</section>
-    		<section class="footer-copyright">
+    		<section class="footer copyright">
           <p>WEBSITE BY</p>
           <a class="html-logo" href="https://htmlacademy.ru"><img src="img/html.png"  width="113" height="39" alt="HTML Academy logo"></a>
         </section>

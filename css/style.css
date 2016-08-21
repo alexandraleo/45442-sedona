@@ -6,8 +6,9 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
+	margin-top: 0;
 }
-h2 {
+h2, .hashtag {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
@@ -15,6 +16,10 @@ h2 {
 }
 p.text-special {
 	color: #ffffff;
+	text-align: center;
+}
+p.text-reasons {
+	text-align: center;
 }
 span.title-special, span.title-reasons {
 	font-weight: bold;
@@ -31,4 +36,121 @@ span.hotel-info {
 }
 span.average-rating {
 	color: #666666;
+}
+.lead {
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	margin-top: 40px;
+}
+div, nav, section, h2 {
+	outline: 1px dashed green;
+}	
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	outline: 2px solid red;
+	background-color: #ffffff;
+}
+ .clearfix::after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ }
+					/*Header*/
+.navigation {
+	padding: 0 6%;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+.navigation li {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	outline: 1px solid yellow;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.navigation li:first-child, .navigation li:nth-child(2) {
+	float: left;
+	text-align: left;
+}
+.navigation li:nth-child(3), .navigation li:last-child  {
+	float: right;
+	text-align: right;
+}
+.navigation li:nth-child(4) {
+	padding-right: 30px;
+}
+.navigation li:nth-child(2) {
+	padding-left: 30px;
+}
+.navigation a {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+	outline: 1px solid green;
+}
+
+					/*Main*/					
+.lead-block {
+	width: 576px;
+	margin: 0 auto;
+	text-align: center;
+}
+.text-special {
+	background-color: #81b3d2;
+	width: 256px;
+}
+.left {
+	float: left;
+	width: 400px;
+}
+.special-img-right{
+	float: right;
+	width: 800px;
+}
+.right {
+	float: right;
+	width: 400px;
+}
+.special-img-left {
+	float: left;
+	width: 800px;
+}
+.reasons {
+	float: left;
+	width: 400px;
+}
+.button-search {
+	width: 570px;
+	height: 86px;
+	background-color: #766357;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.hotels-search {
+	width: 570px;
+}
+.hotels-search {
+	width: 570px;
+
+}
+					/*Footer*/
+.footer {
+	float: left;
+	width: 400px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
