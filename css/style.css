@@ -44,7 +44,7 @@ span.average-rating {
 	color: #333333;
 	margin-top: 40px;
 }
-div, nav, section, h2 {
+div, section, h2 {
 	outline: 1px dashed green;
 }	
 .container {
@@ -60,6 +60,7 @@ div, nav, section, h2 {
  }
 					/*Header*/
 .navigation {
+	position: relative;
 	padding: 0 6%;
 }
 .navigation ul {
@@ -72,7 +73,6 @@ div, nav, section, h2 {
 	display: inline-block;
 	width: 20%;
 	vertical-align: top;
-	outline: 1px solid yellow;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -96,14 +96,45 @@ div, nav, section, h2 {
 	line-height: 26px;
 	font-weight: bold;
 	color: #000000;
-	outline: 1px solid green;
+}
+.header-logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
+	z-index: 2;
+}
+.header-logo img {
+	width: 138px;
+	height: 70px;
 }
 
 					/*Main*/					
 .main-logo {
+	position: relative;
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+}
+.main-logo::before {
 	content: "";
-	z-index: 2;
-	background: #ffffff url("img/background.jpg") mo-repeat;
+	width: 458px;
+	height: 352px;
+	position: absolute;
+	top: 77px;
+	left: 370px;
+	background: url(../img/sedona-welcome.png) no-repeat;
+	z-index: 4;
+}
+.main-logo::after {
+	content: "";
+	position: absolute;
+	top: 454px;
+	left: 0;
+	width: 1200px;
+	height: 57px;
+	background: url(../img/mask.png) no-repeat;
+	z-index: 3;
 }
 .lead-block {
 	width: 576px;
@@ -225,6 +256,7 @@ div, nav, section, h2 {
 }
 .results-list li {
 	display: inline-block;
+	vertical-align: top;
 	padding-right: 35px;
 	font-size: 12px;
 	line-height: 18px;
