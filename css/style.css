@@ -116,26 +116,17 @@ div, section, h2 {
 	margin: 0;
 	padding: 0;
 }
-.main-logo::before {
-	content: "";
-	width: 458px;
-	height: 352px;
-	position: absolute;
-	top: 77px;
-	left: 370px;
-	background: url(../img/sedona-welcome.png) no-repeat;
-	z-index: 4;
-}
 .main-logo::after {
 	content: "";
 	position: absolute;
-	top: 454px;
-	left: 0;
-	width: 1200px;
-	height: 57px;
-	background: url(../img/mask.png) no-repeat;
-	z-index: 3;
+	width: 100%;
+	min-height: 510px;
+	top: 0px;
+	left: 0px;
+	background: url(../img/sedona-welcome.png) center 75px no-repeat,
+				url(../img/mask.png) center 450px no-repeat;
 }
+
 .lead-block {
 	width: 576px;
 	margin: 0 auto;
@@ -204,17 +195,41 @@ div, section, h2 {
 }
 
 					/*Footer*/
+.main-footer .container {
+	padding: 35px 0;
+}
 .footer {
-	float: left;
+	display: inline-block;
 	width: 400px;
+	margin-right: -3px;
+/*	max-height: 120px;*/
 	text-align: center;
 	vertical-align: middle;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 0;
 }
 .logo-text {
 	width: 75px;
 }
+.hashtag p {
+	margin: 0;
+}
+.logo-text, .html-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.social a {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+	font-size: 0;
+	margin-right: 5px;
+	color: #ffffff;
+}
+.social a:last-child {
+	margin-right: 0;
+}
+
 					/*Hotels*/
 .booking-option:first-child {
 	float: left;
