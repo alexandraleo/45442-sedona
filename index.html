@@ -2,11 +2,117 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+  	<header class="main-header">
+      <div class="container clearfix">
+    		<nav class="navigation">
+        <a class="header-logo" href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo"></a>
+    			<ul>
+    				<li><a href="#">Информация</a></li>
+    				<li><a href="#">Фото и видео</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+    				<li><a href="#">Карта штата</a></li>
+    			</ul>
+    		</nav>
+      </div>
+  	</header>
+  	<main class="main-content">
+      <div class="container clearfix">
+    	 <div class="main-logo">
+        <img src="img/background.jpg" width="1200" height="508" alt="Седона">
+<!--        <img src="img/mask.png" width="1200" height="57" alt="Mask">
+    	 <img src="img/sedona-welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!"> -->
+       </div>
+    	 <div class="lead-block"><h2 class="headline">Седона — небольшой городок в Аризоне,  заслуживающий большего! </h2>
+    	 <p class="lead clearfix">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p></div>
+    	 <section class="reason-special clearfix">
+          <p class="text-special left"><span class="title-special">Настоящий городок</span> <br>-№1-<br> Седона - не аттракцион для туристов, там течет своя жизнь.</p>
+          <img class="special-img-right" src="img/reason-1.jpg" width="800" height="256" alt="Настоящий городок">
+  	   </section>
+       <div class="clearfix">
+         <section class="reasons habitation">
+            <img src="img/house.png" alt="Жилье" width="75" height="72">
+            <p class="text-reasons"><span class="title-reasons">Жилье</span><br>
+            Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </section>
+          <section class="reasons food">
+            <img src="img/food.png" alt="Еда" width="74" height="70">
+            <p class="text-reasons"><span class="title-reasons">Еда</span><br>
+            Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+          </section>
+          <section class="reasons souvenirs">
+            <img src="img/souvenirs.png" alt="Сувениры" width="64" height="76">
+            <p class="text-reasons"><span class="title-reasons">Сувениры</span><br>
+            Не только китайского, но и местного производства!</p>
+          </section>
+        </div>
+        <section class="reason-special clearfix">
+          <img class="special-img-left" src="img/reason-2.jpg" width="800" height="256" alt="Мост Дьявола">
+    		  <p class="text-special right"><span class="title-special">Там есть мост дьявола</span><br>
+          -№2-<br>Да, по нему можно пройти! Если конечно вы осмелитесь.</p>
+        </section>
+        <div class="clearfix">
+          <section class="reasons territory">
+            <p class="text-reasons"><span class="title-reasons">Небольшая площадь</span><br>
+            -№3-<br>Все достопримечательности находятся очень близко</p>
+          </section>
+          <section class="reasons road">
+            <p class="text-reasons"><span class="title-reasons">Красивая дорога</span><br>
+            -№4-<br>Ехать одному из Лас-Вегага совсем не скучно!</p>
+          </section>
+          <section class="reasons tourists">
+            <p class="text-reasons"><span class="title-reasons">Мало туристов</span><br>
+            -№5-<br>Большинство едет в Гранд Каньон и толпится там</p>
+          </section>
+        </div>
+        <section class="lead-block">
+          <h2 class="interested">Заинтересовались?</h2>
+          <p class="text-reasons invite">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="button-search" type="button">Поиск гостиницы в Седоне</button>           
+        </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+        <form class="hotels-search">
+          <label class="search-option">
+            <input type="date" name="checkin">
+            <span class="search-option-text">Дата заезда:</span>
+          </label>
+          <label class="search-option">
+            <input type="date" name="checkout">
+            <span class="search-option-text">Дата выезда:</span>
+          </label>
+          <label class="search-option">
+            <input type="number" name="adults" min="1" max="10" step="1" value="2">
+            <span class="search-option-text">Взрослые:</span>
+          </label>
+          <label class="search-option">
+            <input type="number" name="children"  min="1" max="10"  step="1" value="0">
+            <span class="search-option-text">Дети:</span>
+          </label>
+          <input class="search-apply-button" type="submit" name="search" value="Найти">
+        </form>
+        <img src="img/map.jpg" alt="Карта Седоны" width="1200" height="593">
+      </div>
+  	</main>
+  	<footer class="main-footer">
+      <div class="container clearfix">
+    		<section class="footer hashtag">
+    			<p>#VISITSEDONA</p>
+    		</section>
+    		<section class="footer social">
+    			<a class="social-btn social-btn-tw" href="#">Tвиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-yt" href="#">Youtube</a>
+    		</section>
+    		<section class="footer copyright">
+          <p class="logo-text">WEBSITE BY</p>
+          <a class="html-logo" href="https://htmlacademy.ru"><img src="img/html.png"  width="113" height="39" alt="HTML Academy logo"></a>
+        </section>
+      </div>
+  	</footer>
   </body>
 </html>
