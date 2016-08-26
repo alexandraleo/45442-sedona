@@ -120,11 +120,11 @@ div, section, h2 {
 	content: "";
 	position: absolute;
 	width: 100%;
-	min-height: 510px;
+	min-height: 508px;
 	top: 0px;
 	left: 0px;
 	background: url(../img/sedona-welcome.png) center 75px no-repeat,
-				url(../img/mask.png) center 450px no-repeat;
+				url(../img/mask.png) center 451px no-repeat;
 }
 
 .lead-block {
