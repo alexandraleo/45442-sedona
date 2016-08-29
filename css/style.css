@@ -39,14 +39,14 @@ span.hotel-info {
 span.average-rating {
 	color: #666666;
 }
-
+/*
 div, section, h2 {
 	outline: 1px dashed green;
-}	
+}*/	
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	outline: 2px solid red;
+/*	outline: 2px solid red;*/
 	background-color: #ffffff;
 }
  .clearfix::after {
@@ -208,7 +208,7 @@ div, section, h2 {
 	padding-bottom: 40px;
 	padding-left: 70px;
 	padding-right: 70px;
-	margin-bottom: 22px;
+	margin-bottom: 60px;
 }
 .invite {
 	display: inline-block;
@@ -234,17 +234,17 @@ div, section, h2 {
 	position: relative;
 	box-sizing: border-box;
 	width: 570px;
-	outline: 2px solid red;
+/*	outline: 2px solid red;*/
 }
 .hotels-search {
 	width: 460px;
 	position: absolute;
 	left: 50%;
 	margin-left: 33px;
-	top: -50px;
+	top: 0;
 	background-color: #ffffff;
-	padding: 55px 52px;
-	outline: 1px solid green;
+	padding: 55px 53px;
+/*	outline: 1px solid green;*/
 }
 .search-option {
 	display: inline-block;
@@ -256,10 +256,14 @@ div, section, h2 {
 	color: #000000;
 	text-transform: uppercase;
 }
+.search-option:last-child {
+	margin-left: 50px;
+}
 .search-option-text {
 	display: inline-block;
 	width: 110px;
 }
+
 .hotels-search input[type="date"] {
 	box-sizing: border-box;
 	font-size: inherit;
@@ -275,11 +279,26 @@ div, section, h2 {
 	padding-bottom: 7px;
 	padding-left: 15px;
 	padding-right: 30px;
-
 	background-color: #f2f2f2;
 	border: none;
 	outline: none;
-
+}
+.hotels-search input[type="number"] {
+	box-sizing: border-box;
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	color: inherit;
+	text-transform: uppercase;
+	width: 114px;
+	padding: 6px 38px;
+	background-color: #f2f2f2;
+	border: none;
+	outline: none;
+	margin-right: 50px;
+}
+.hotels-search input[type="number"] {
+	margin-right: 0;
 }
 .hotels-search .btn {
 	display: inline-block;
@@ -295,6 +314,16 @@ div, section, h2 {
 	padding: 16px 195px;
 	text-align: center;
 	margin-top: 55px;
+}
+.question {
+	width: 576px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 0;
+}
+.question h2 {
+	padding-top: 0;
+	margin-top: 0;
 }
 
 
