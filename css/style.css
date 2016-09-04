@@ -4,13 +4,13 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 	margin-top: 0;
-  -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow:    0px 0px 20px -5px rgba(0, 0, 0, 0.5);
-	box-shadow:         0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.container {
+	box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
 }
 					/*Иконочный шрифт*/
 @font-face {
@@ -25,6 +25,7 @@ body {
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
+  vertical-align: middle;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
@@ -36,7 +37,6 @@ body {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 
@@ -56,7 +56,7 @@ h2, .hashtag, .results-quantity {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
-	font-weight: bold;
+	font-weight: 700;
 }
 p.text-special {
 	color: #ffffff;
@@ -67,7 +67,7 @@ p.text-reasons {
 	margin: 0;
 }
 span.title-special, span.title-reasons {
-	font-weight: bold;
+	font-weight: 700;
 }
 h2.interested {
 	font-size: 30px;
@@ -123,7 +123,7 @@ p.invite {
 	text-decoration: none;
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #000000;
 }
 .navigation a:hover {
@@ -199,13 +199,15 @@ p.invite {
 }
 .title-special {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 21px;
 	line-height: 21px;
-	font-weight: bold;
+	font-weight: 700;
 	padding-bottom: 23px;
 }
 .number-special {
 	display: inline-block;
+	vertical-align: top;
 	padding-bottom: 22px;
 }
 .left {
@@ -243,6 +245,7 @@ p.invite {
 }
 .title-reasons {
 	display: inline-block;
+	vertical-align: top;
 	width: 140px;
 	font-size: 21px;
 	line-height: 21px;
@@ -259,6 +262,7 @@ p.invite {
 }
 .invite {
 	display: inline-block;
+	vertical-align: top;
 	padding-top: 5px;
 	padding-left: 70px;
 	padding-right: 70px;
@@ -270,7 +274,7 @@ p.invite {
 	background-color: #766357;
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
 	padding-top: 29px;
@@ -306,11 +310,12 @@ p.invite {
 }
 .social a {
 	display: inline-block;
+	vertical-align: top;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
 	font-size: 0;
-	margin-right: 5px;
+	margin-right: 4px;
 	color: #ffffff;
 }
 .social a:last-child {
@@ -321,10 +326,10 @@ p.invite {
 	line-height: 48px;
 	text-align: center;
 }
-.social a:hover, .btn:hover {
+.social a:hover, .hotels-search .btn:hover {
 	background-color: #669ec0;
 }
-.social a:active, .btn:active {
+.social a:active, .hotels-search .btn:active {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
@@ -386,7 +391,7 @@ p.invite {
 .booking-header {
 	font-size: 16px;
 	line-height: 21px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #ffffff;
 	margin-bottom: 20px;
 }
@@ -445,6 +450,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);  
   transform: translate(-50%, -50%);
   width: 2px;
   height: 22px;
@@ -452,15 +458,19 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 32px;
   vertical-align: top;
   cursor: pointer;
 }
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
+}
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 58px;
 }
 .price-controls input {
   width: 50px;
@@ -550,6 +560,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 }
 .filter-direction a {
 	display: inline-block;
+	vertical-align: top;
 	width: 15px;
 	height: 15px;
 	margin: 0;
@@ -576,6 +587,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 }
 .results-list ul {
 	display: inline-block;
+	vertical-align: bottom;
 	margin: 0;
 	padding: 0;
 	font-size: 0;
@@ -585,7 +597,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 33px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-size: 12px;
 	line-height: 18px;
@@ -629,7 +641,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 	font-size: 19px;
 	color: #81b3d2;
 	margin-left: -5px;
-	margin-top: 2px;
+
 	padding: 0;
 }
 .average-rating {
@@ -643,7 +655,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 	width: 110px;
 	background-color: #f2f2f2;
 	margin-top: 45px;
-	padding: 4px 6px;
+	padding: 3px 5px;
 }
 					/*Карточки отелей*/
 .accomodation {
@@ -693,6 +705,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 }
 .hotel-info {
 	display: inline-block;
+	vertical-align: top;
 	color: #333333;
 	width: 110px;
 	margin-right: 3px;
@@ -704,9 +717,9 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 .about-button, .booking-button {
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #ffffff;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	padding-top: 2px;
 	padding-bottom: 4px;
@@ -743,15 +756,20 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 .search-window {
 	display: none;
 	position: absolute;
+	z-index: 2;
 	left: 0;
 	bottom: 0;
-	transform: translate(3px,100%);
+  -webkit-transform: translate(3px,100%);	
+  transform: translate(3px,100%);
 	box-sizing: border-box;
-	padding: 54px 54px;
+	padding-top: 57px;
+	padding-right: 55px;
+	padding-left: 55px;
+	padding-bottom: 55px;
 	width: 570px;
 	background-color: #ffffff;
 	background-color: #ffffff;
-	  -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow:    0px 0px 20px -5px rgba(0, 0, 0, 0.5);
 	box-shadow:         0px 0px 20px -5px rgba(0, 0, 0, 0.5);
 }
@@ -766,10 +784,10 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 	box-sizing: border-box;
 	position: relative;
 	width: 460px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -805,6 +823,7 @@ input[type="checkbox"]:disabled ~ .booking-option-text::before {
 
 .hotels-search input[type="date"] {
 	display: inline-block;
+	vertical-align: top;
 	box-sizing: border-box;
 	font-size: inherit;
 	line-height: inherit;
@@ -872,10 +891,10 @@ input[type=number] {
 .hotels-search .btn {
 	display: block;
 	box-sizing: border-box;
-	width: 100%;
+	width: 460px;
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #ffffff;
@@ -883,9 +902,10 @@ input[type=number] {
 	padding-top: 17px;
 	padding-bottom: 16px;
 	text-align: center;
-	margin-top: 57px;
+	margin-top: 55px;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 .question {
 	position: relative;
@@ -933,23 +953,36 @@ input[type=number] {
 	color: #81b3d2;
 }
 
-
-
 .search-window-display {
 	display: block;
-	animation-name: form-open;
-	animation-duration: 0.8s;
+	-webkit-animation-name: form-open;
+	        animation-name: form-open;
+	-webkit-animation-duration: 0.8s;
+	        animation-duration: 0.8s;
 }
 .search-window-close {
 	display: block;
-	animation-name: form-close;
-	animation-duration: 0.8s;
+	-webkit-animation-name: form-close;
+	        animation-name: form-close;
+	-webkit-animation-duration: 0.8s;
+	        animation-duration: 0.8s;
 }
 .search-window-error {
 	display: block;
-	animation-name: error;
-	animation-duration: 3s;
+	-webkit-animation-name: error;
+	        animation-name: error;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
 }
+@-webkit-keyframes form-open {
+	0% {
+		opacity: 0;
+		}
+	100% {
+		opacity: 1;
+		}
+	}
+
 @keyframes form-open {
 	0% {
 		opacity: 0;
@@ -958,7 +991,16 @@ input[type=number] {
 		opacity: 1;
 		}
 	}
-}
+
+@-webkit-keyframes form-close {
+	0% {
+		opacity: 1;
+		}
+	100% {
+		opacity: 0;
+		}
+	}
+
 @keyframes form-close {
 	0% {
 		opacity: 1;
@@ -967,10 +1009,25 @@ input[type=number] {
 		opacity: 0;
 		}
 	}
+
+@-webkit-keyframes error {
+	0%, 100% {-webkit-transform: translate(0, 100%);transform: translate(0, 100%);}
+	20%, 40%, 60%, 80% {-webkit-transform: translate(-10px, 100%);transform: translate(-10px, 100%);}
+	30%, 50%, 70%, 90% {-webkit-transform: translate(10px, 100%);transform: translate(10px, 100%);}
 }
 @keyframes error {
-	0%, 100% {transform: translateX(0);}
-	20%, 40%, 60%, 80% {transform: translateX(-10px);}
-	30%, 50%, 70%, 90% {transform: translateX(10px);}
+	0%, 100% {-webkit-transform: translate(0, 100%);transform: translate(0, 100%);}
+	20%, 40%, 60%, 80% {-webkit-transform: translate(-10px, 100%);transform: translate(-10px, 100%);}
+	30%, 50%, 70%, 90% {-webkit-transform: translate(10px, 100%);transform: translate(10px, 100%);}
 }
 
+.map-container {
+	position: relative;
+	width: 1200px;
+	height: 593px;
+}
+.map-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

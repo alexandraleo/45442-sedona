@@ -6,7 +6,6 @@ var checkin = popup.querySelector("[name=checkin]");
 var checkout = popup.querySelector("[name=checkout]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
-var btnsub = popup.querySelector(".btn");
 var storagein = localStorage.getItem("checkin");
 var storageout = localStorage.getItem("checkout");
 var storagead = localStorage.getItem("adults");
@@ -37,7 +36,6 @@ btn.addEventListener("click", function(event) {
   }
   if (storagechi) {
   	children.value = storagechi;
-  	btnsub.focus();
   } else {
   	children.focus();
   }
@@ -58,6 +56,7 @@ form.addEventListener("submit", function(event) {
 
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
+		popup.classList.toggle("search-window-close");
 		if (popup.classList.contains("search-window-display")) {
 		popup.classList.remove("search-window-display");
 		}	
